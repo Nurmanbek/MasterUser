@@ -1,0 +1,80 @@
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MyDesignForm.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MyDesignForm.exe
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MyDesignForm.pdb
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MaterialSkin.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.Form1.resources
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.exe
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.pdb
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\Employee.mdf
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\Employee_log.ldf
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.Main.resources
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\obj\Debug\MyDesignForm.example.resources
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MetroFramework.Design.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MetroFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\MetroFramework.Fonts.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\Microsoft.VisualBasic.dll
+c:\users\admin\documents\visual studio 2015\Projects\MyDesignForm\MyDesignForm\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\NIMDA\Source\Repos\Finish\MyDesignForm\bin\Debug\MyDesignForm.exe.config
+C:\Users\NIMDA\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.exe
+C:\Users\NIMDA\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.pdb
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MyDesignForm.exe.config
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.exe
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.pdb
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\Employee.mdf
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\Employee_log.ldf
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MyDesignForm.exe
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MyDesignForm.pdb
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MaterialSkin.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MetroFramework.Design.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MetroFramework.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\Microsoft.VisualBasic.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.example.resources
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.Form1.resources
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.Main.resources
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.Properties.Resources.resources
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\obj\Debug\MyDesignForm.csproj.GenerateResource.Cache
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\EntityFramework.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\System.Data.SQLite.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\EntityFramework.xml
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Developer\Source\Repos\Finish\MyDesignForm\bin\Debug\System.Data.SQLite.xml
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MyDesignForm.exe.config
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.exe
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.pdb
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\Employee.mdf
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\Employee_log.ldf
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MyDesignForm.exe
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MyDesignForm.pdb
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\EntityFramework.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\EntityFramework.SqlServer.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MaterialSkin.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MetroFramework.Design.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MetroFramework.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\MetroFramework.Fonts.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\Microsoft.VisualBasic.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\System.Data.SQLite.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\EntityFramework.xml
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\EntityFramework.SqlServer.xml
+E:\Новая папка\Finish-master1\MyDesignForm\bin\Debug\System.Data.SQLite.xml
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.example.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.Form1.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.Main.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.Properties.Resources.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.csproj.GenerateResource.Cache
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.test.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.Control.Controller.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.csprojResolveAssemblyReference.cache
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.view.resources
+E:\Новая папка\Finish-master1\MyDesignForm\obj\Debug\MyDesignForm.EditForm.resources
