@@ -47,7 +47,7 @@ namespace MyDesignForm
 
             using (var baglan = new SQLiteConnection(DbConst))
             {
-                using (var query = new SQLiteCommand("SELECT * FROM incomeUsers", baglan))
+                using (var query = new SQLiteCommand($"SELECT * FROM incomeUsers where incomeid={this.btnNomer}", baglan))
                 {
                     try
                     {
@@ -81,8 +81,25 @@ namespace MyDesignForm
         private void metroGrid1_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             EditForm ef = new EditForm();
+            int indexRow = e.RowIndex; // get the selected Row Index
+            DataGridViewRow row = metroGrid1.Rows[indexRow];
+
+            ef.editid = row.Cells[1].Value.ToString();
+            ef.editname = row.Cells[2].Value.ToString();
+            ef.touser = row.Cells[3].Value.ToString();
+            ef.onuser = row.Cells[4].Value.ToString();
+            ef.editdate = row.Cells[5].Value.ToString();
+            ef.editsumma = row.Cells[6].Value.ToString();
+            ef.incomeid = this.btnNomer;
+            
             ef.ShowDialog();
             this.Refresh();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EditForm ef = new EditForm();
+            ef.ShowDialog();
         }
     }
     

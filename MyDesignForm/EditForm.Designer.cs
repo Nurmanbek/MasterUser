@@ -28,242 +28,232 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.dataa1 = new MetroFramework.Controls.MetroDateTime();
+            this.name = new MetroFramework.Controls.MetroTextBox();
+            this.editbtn = new MetroFramework.Controls.MetroButton();
+            this.id = new System.Windows.Forms.Label();
+            this.summa = new MetroFramework.Controls.MetroTextBox();
+            this.kimden = new MetroFramework.Controls.MetroTextBox();
+            this.kimge = new MetroFramework.Controls.MetroTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.metroPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroComboBox1
+            // dataa1
             // 
-            this.metroComboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
-            "Азамат",
-            "Алмаз",
-            "Шарабидин",
-            "Арчабешик",
-            "Асан",
-            "Үсөн",
-            "Кадыр",
-            "Аскар"});
-            this.metroComboBox1.Location = new System.Drawing.Point(0, 57);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(166, 29);
-            this.metroComboBox1.TabIndex = 0;
-            this.metroComboBox1.Tag = "Кимден";
-            this.metroComboBox1.UseSelectable = true;
+            this.dataa1.DisplayFocus = true;
+            this.dataa1.Location = new System.Drawing.Point(55, 149);
+            this.dataa1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dataa1.Name = "dataa1";
+            this.dataa1.Size = new System.Drawing.Size(166, 29);
+            this.dataa1.TabIndex = 3;
             // 
-            // metroTextBox1
+            // name
+            // 
+            this.name.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.name.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
+            this.name.BackColor = System.Drawing.Color.Gray;
             // 
             // 
             // 
+            this.name.CustomButton.Image = null;
+            this.name.CustomButton.Location = new System.Drawing.Point(144, 1);
+            this.name.CustomButton.Name = "";
+            this.name.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.name.CustomButton.TabIndex = 1;
+            this.name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.name.CustomButton.UseSelectable = true;
+            this.name.CustomButton.Visible = false;
+            this.name.DisplayIcon = true;
+            this.name.ForeColor = System.Drawing.Color.Black;
+            this.name.Lines = new string[0];
+            this.name.Location = new System.Drawing.Point(55, 43);
+            this.name.MaxLength = 32767;
+            this.name.Name = "name";
+            this.name.PasswordChar = '\0';
+            this.name.PromptText = "Name";
+            this.name.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.name.SelectedText = "";
+            this.name.SelectionLength = 0;
+            this.name.SelectionStart = 0;
+            this.name.ShortcutsEnabled = true;
+            this.name.Size = new System.Drawing.Size(166, 23);
+            this.name.TabIndex = 4;
+            this.name.Tag = "Суммасы";
+            this.name.UseSelectable = true;
+            this.name.WaterMark = "Name";
+            this.name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.name.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(176, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(0, 17);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(166, 23);
-            this.metroTextBox1.TabIndex = 1;
-            this.metroTextBox1.Tag = "Аты";
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // editbtn
             // 
-            // metroComboBox2
+            this.editbtn.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.editbtn.Location = new System.Drawing.Point(94, 236);
+            this.editbtn.Name = "editbtn";
+            this.editbtn.Size = new System.Drawing.Size(90, 25);
+            this.editbtn.TabIndex = 5;
+            this.editbtn.Text = "Өзгөртүү";
+            this.editbtn.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.editbtn.UseSelectable = true;
+            this.editbtn.Click += new System.EventHandler(this.editbtn_Click);
             // 
-            this.metroComboBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Items.AddRange(new object[] {
-            "Азамат",
-            "Алмаз",
-            "Шарабидин",
-            "Арчабешик",
-            "Асан",
-            "Үсөн",
-            "Кадыр",
-            "Аскар"});
-            this.metroComboBox2.Location = new System.Drawing.Point(0, 103);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(166, 29);
-            this.metroComboBox2.TabIndex = 2;
-            this.metroComboBox2.Tag = "Кимге";
-            this.metroComboBox2.UseSelectable = true;
+            // id
             // 
-            // metroDateTime1
+            this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.id.Location = new System.Drawing.Point(90, 5);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(102, 35);
+            this.id.TabIndex = 9;
+            this.id.Text = "111111111";
+            this.id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            this.metroDateTime1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroDateTime1.Location = new System.Drawing.Point(0, 149);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(166, 29);
-            this.metroDateTime1.TabIndex = 3;
-            // 
-            // metroTextBox2
+            // summa
             // 
             // 
             // 
             // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(176, 1);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(0, 195);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(166, 23);
-            this.metroTextBox2.TabIndex = 4;
-            this.metroTextBox2.Tag = "Суммасы";
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.summa.CustomButton.Image = null;
+            this.summa.CustomButton.Location = new System.Drawing.Point(144, 1);
+            this.summa.CustomButton.Name = "";
+            this.summa.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.summa.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.summa.CustomButton.TabIndex = 1;
+            this.summa.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.summa.CustomButton.UseSelectable = true;
+            this.summa.CustomButton.Visible = false;
+            this.summa.DisplayIcon = true;
+            this.summa.Lines = new string[0];
+            this.summa.Location = new System.Drawing.Point(55, 193);
+            this.summa.MaxLength = 32767;
+            this.summa.Name = "summa";
+            this.summa.PasswordChar = '\0';
+            this.summa.PromptText = "Summa";
+            this.summa.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.summa.SelectedText = "";
+            this.summa.SelectionLength = 0;
+            this.summa.SelectionStart = 0;
+            this.summa.ShortcutsEnabled = true;
+            this.summa.Size = new System.Drawing.Size(166, 23);
+            this.summa.TabIndex = 8;
+            this.summa.Tag = "Суммасы";
+            this.summa.UseSelectable = true;
+            this.summa.WaterMark = "Summa";
+            this.summa.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.summa.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroButton1
+            // kimden
             // 
-            this.metroButton1.Location = new System.Drawing.Point(150, 232);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 29);
-            this.metroButton1.TabIndex = 5;
-            this.metroButton1.Text = "Өзгөртүү";
-            this.metroButton1.UseSelectable = true;
             // 
-            // metroPanel1
             // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.metroPanel1.Controls.Add(this.metroButton1);
-            this.metroPanel1.Controls.Add(this.metroTextBox2);
-            this.metroPanel1.Controls.Add(this.panel4);
-            this.metroPanel1.Controls.Add(this.metroDateTime1);
-            this.metroPanel1.Controls.Add(this.panel3);
-            this.metroPanel1.Controls.Add(this.metroComboBox2);
-            this.metroPanel1.Controls.Add(this.panel2);
-            this.metroPanel1.Controls.Add(this.metroComboBox1);
-            this.metroPanel1.Controls.Add(this.panel1);
-            this.metroPanel1.Controls.Add(this.metroTextBox1);
-            this.metroPanel1.Controls.Add(this.panel5);
-            this.metroPanel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(49, 16);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(166, 233);
-            this.metroPanel1.TabIndex = 6;
-            this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // panel4
+            this.kimden.CustomButton.Image = null;
+            this.kimden.CustomButton.Location = new System.Drawing.Point(144, 1);
+            this.kimden.CustomButton.Name = "";
+            this.kimden.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.kimden.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.kimden.CustomButton.TabIndex = 1;
+            this.kimden.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.kimden.CustomButton.UseSelectable = true;
+            this.kimden.CustomButton.Visible = false;
+            this.kimden.DisplayIcon = true;
+            this.kimden.Lines = new string[0];
+            this.kimden.Location = new System.Drawing.Point(55, 114);
+            this.kimden.MaxLength = 32767;
+            this.kimden.Name = "kimden";
+            this.kimden.PasswordChar = '\0';
+            this.kimden.PromptText = "Kimden";
+            this.kimden.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.kimden.SelectedText = "";
+            this.kimden.SelectionLength = 0;
+            this.kimden.SelectionStart = 0;
+            this.kimden.ShortcutsEnabled = true;
+            this.kimden.Size = new System.Drawing.Size(166, 23);
+            this.kimden.TabIndex = 7;
+            this.kimden.Tag = "Суммасы";
+            this.kimden.UseSelectable = true;
+            this.kimden.WaterMark = "Kimden";
+            this.kimden.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kimden.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 178);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(166, 17);
-            this.panel4.TabIndex = 9;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // kimge
             // 
-            // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 132);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(166, 17);
-            this.panel3.TabIndex = 8;
             // 
-            // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 86);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(166, 17);
-            this.panel2.TabIndex = 7;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(166, 17);
-            this.panel1.TabIndex = 6;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(166, 17);
-            this.panel5.TabIndex = 10;
+            this.kimge.CustomButton.Image = null;
+            this.kimge.CustomButton.Location = new System.Drawing.Point(144, 1);
+            this.kimge.CustomButton.Name = "";
+            this.kimge.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.kimge.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.kimge.CustomButton.TabIndex = 1;
+            this.kimge.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.kimge.CustomButton.UseSelectable = true;
+            this.kimge.CustomButton.Visible = false;
+            this.kimge.DisplayIcon = true;
+            this.kimge.Lines = new string[0];
+            this.kimge.Location = new System.Drawing.Point(55, 79);
+            this.kimge.MaxLength = 32767;
+            this.kimge.Name = "kimge";
+            this.kimge.PasswordChar = '\0';
+            this.kimge.PromptText = "Kimge";
+            this.kimge.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.kimge.SelectedText = "";
+            this.kimge.SelectionLength = 0;
+            this.kimge.SelectionStart = 0;
+            this.kimge.ShortcutsEnabled = true;
+            this.kimge.Size = new System.Drawing.Size(166, 23);
+            this.kimge.TabIndex = 6;
+            this.kimge.Tag = "Суммасы";
+            this.kimge.UseSelectable = true;
+            this.kimge.WaterMark = "Kimge";
+            this.kimge.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.kimge.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel6.Location = new System.Drawing.Point(0, 26);
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Location = new System.Drawing.Point(0, 25);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(268, 28);
+            this.panel6.Size = new System.Drawing.Size(268, 29);
             this.panel6.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(63, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ө з г ө р т ү ү";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.panel7.Controls.Add(this.metroPanel1);
-            this.panel7.Location = new System.Drawing.Point(0, 63);
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.editbtn);
+            this.panel7.Controls.Add(this.id);
+            this.panel7.Controls.Add(this.name);
+            this.panel7.Controls.Add(this.summa);
+            this.panel7.Controls.Add(this.kimge);
+            this.panel7.Controls.Add(this.kimden);
+            this.panel7.Controls.Add(this.dataa1);
+            this.panel7.Location = new System.Drawing.Point(0, 60);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(268, 263);
+            this.panel7.Size = new System.Drawing.Size(268, 285);
             this.panel7.TabIndex = 8;
             // 
             // EditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(268, 344);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -272,31 +262,25 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(268, 344);
             this.Name = "EditForm";
-            this.Text = "Өзгөртүү баракчасы";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.EditForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EditForm_Paint);
-            this.metroPanel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
+        private MetroFramework.Controls.MetroDateTime dataa1;
+        private MetroFramework.Controls.MetroTextBox name;
+        private MetroFramework.Controls.MetroButton editbtn;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
+        private MetroFramework.Controls.MetroTextBox summa;
+        private MetroFramework.Controls.MetroTextBox kimden;
+        private MetroFramework.Controls.MetroTextBox kimge;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label id;
     }
 }

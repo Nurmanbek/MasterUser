@@ -44,7 +44,7 @@ namespace MyDesignForm
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)

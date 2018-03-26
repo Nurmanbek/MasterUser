@@ -136,6 +136,7 @@ namespace MyDesignForm
         private void yaj_Click(object sender, EventArgs e)
         {
             view v = new view();
+            v.btnNomer = 1;
             v.ShowDialog();
         }
 
