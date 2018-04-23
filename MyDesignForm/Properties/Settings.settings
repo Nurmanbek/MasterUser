@@ -10,5 +10,26 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Employee.mdf;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="Admin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="AdminPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin1</Value>
+    </Setting>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">user</Value>
+    </Setting>
+    <Setting Name="UserPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">user123</Value>
+    </Setting>
+    <Setting Name="Gest" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gest</Value>
+    </Setting>
+    <Setting Name="GestPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gest1</Value>
+    </Setting>
+    <Setting Name="logintemp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gest</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

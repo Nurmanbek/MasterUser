@@ -16,20 +16,19 @@ using MaterialSkin;
 
 namespace MyDesignForm
 {
-    public partial class EditForm : MetroForm
+    public partial class AddForm : MetroForm
     {
         public string editid;
-        public string editname1;
         public int status86;
-        public string touser1;
-        
-        public string onuser1;
-
+        public string editname;
+        public string touser;
+        public string onuser;
         public string editdate;
-        public string editsumma1;
+        public string editsumma;
         public int incomeid;
+        public bool status = false;
 
-        public EditForm()
+        public AddForm()
         {
             InitializeComponent();
             MaterialSkinManager skinManager = MaterialSkinManager.Instance;
@@ -39,18 +38,8 @@ namespace MyDesignForm
 
         }
 
-        private void EditForm_Load(object sender, EventArgs e)
+        private void AddForm_Load(object sender, EventArgs e)
         {
-            
-            id.Text = this.editid;
-            name1.Text = this.editname1;
-            
-            kimge1.Text = this.touser1;
-            
-            kimden1.Text = this.onuser1;
-
-            dataa1.Text = this.editdate;
-            summa1.Text = this.editsumma1;
 
         }
 
@@ -59,7 +48,7 @@ namespace MyDesignForm
 
         }
 
-        private void EditForm_Paint(object sender, PaintEventArgs e)
+        private void AddForm_Paint(object sender, PaintEventArgs e)
         {
             System.Drawing.Drawing2D.GraphicsPath objGP = new System.Drawing.Drawing2D.GraphicsPath();
             objGP.AddEllipse(new Rectangle(5, 5, this.Width, this.Height));
@@ -73,7 +62,6 @@ namespace MyDesignForm
 
         private void editbtn_Click(object sender, EventArgs e)
         {
-            string dateValue = dataa1.Text;
             string program_dir = Application.StartupPath;
             string DbConst = $"Data source={program_dir}\\testdb.db;Version=3;";
 
@@ -82,35 +70,37 @@ namespace MyDesignForm
                 using (var query = new SQLiteCommand(baglan))
                 {
                     if(this.status86 == 6060)
-                        query.CommandText = "UPDATE incomeUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, summa = :qSumma where id = :qID";
+                        query.CommandText = "INSERT into incomeUsers(user, toUser, onUser, date, summa, incomeid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qSumma, :qID )";
                     else
-                        query.CommandText = "UPDATE expenseUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, summa = :qSumma where id = :qID";
-                    query.Parameters.Add("qName", DbType.String).Value = name1.Text;
-                    query.Parameters.Add("qKimge", DbType.String).Value = kimge1.Text;
-                    query.Parameters.Add("qKimden", DbType.String).Value = kimden1.Text;
-                    query.Parameters.Add("qDate", DbType.String).Value = dateValue;
-                    query.Parameters.Add("qSumma", DbType.Int32).Value = summa1.Text;
-                    query.Parameters.Add("qID", DbType.Int32).Value = id.Text;
+                        query.CommandText = "INSERT into expenseUsers(user, toUser, onUser, date, summa, expenseid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qSumma, :qID )";
+                    query.Parameters.Add("qName", DbType.String).Value = name.Text;
+                    query.Parameters.Add("qKimge", DbType.String).Value = kimge.Text;
+                    query.Parameters.Add("qKimden", DbType.String).Value = kimden.Text;
+                    query.Parameters.Add("qDate", DbType.String).Value = dataa1.Text;
+                    query.Parameters.Add("qSumma", DbType.Int32).Value = summa.Text;
+                    query.Parameters.Add("qID", DbType.Int32).Value = this.incomeid;
 
                     try
                     {
                         query.Connection.Open();
                         query.ExecuteNonQuery();
+                        this.editsumma = summa.Text;
+                        this.status = true;
+                        this.Close();
                     }
                     catch (Exception error)
                     {
                         MessageBox.Show("Маалымат толтурууда ката бар!");
                         this.Close();
                     }
-                    this.editsumma1 = summa1.Text;
-                    this.Close();
+                    
                 }
             }
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void AddForm_Load_1(object sender, EventArgs e)
         {
-            Close();
+
         }
     }
 }

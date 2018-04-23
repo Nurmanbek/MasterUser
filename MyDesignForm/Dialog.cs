@@ -7,25 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BunifuAnimatorNS;
-using Bunifu.Framework.UI;
-using MaterialSkin.Controls;
 
 namespace MyDesignForm
 {
-    public partial class example : Form
+    public partial class Dialog : Form
     {
-        public example()
+        public Dialog()
         {
             InitializeComponent();
         }
 
-        private void example_Load(object sender, EventArgs e)
+        private void Dialog_Load(object sender, EventArgs e)
         {
-
+            bunifuFormFadeTransition1.ShowAsyc(this);
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

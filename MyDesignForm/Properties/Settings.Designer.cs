@@ -33,5 +33,89 @@ namespace MyDesignForm.Properties {
                 return ((string)(this["EmployeeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
+        public string Admin {
+            get {
+                return ((string)(this["Admin"]));
+            }
+            set {
+                this["Admin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin1")]
+        public string AdminPassword {
+            get {
+                return ((string)(this["AdminPassword"]));
+            }
+            set {
+                this["AdminPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("user")]
+        public string User {
+            get {
+                return ((string)(this["User"]));
+            }
+            set {
+                this["User"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("user123")]
+        public string UserPassword {
+            get {
+                return ((string)(this["UserPassword"]));
+            }
+            set {
+                this["UserPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("gest")]
+        public string Gest {
+            get {
+                return ((string)(this["Gest"]));
+            }
+            set {
+                this["Gest"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("gest1")]
+        public string GestPassword {
+            get {
+                return ((string)(this["GestPassword"]));
+            }
+            set {
+                this["GestPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("gest")]
+        public string logintemp {
+            get {
+                return ((string)(this["logintemp"]));
+            }
+            set {
+                this["logintemp"] = value;
+            }
+        }
     }
 }

@@ -28,74 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditForm));
             this.dataa1 = new MetroFramework.Controls.MetroDateTime();
-            this.name = new MetroFramework.Controls.MetroTextBox();
             this.editbtn = new MetroFramework.Controls.MetroButton();
             this.id = new System.Windows.Forms.Label();
-            this.summa = new MetroFramework.Controls.MetroTextBox();
-            this.kimden = new MetroFramework.Controls.MetroTextBox();
-            this.kimge = new MetroFramework.Controls.MetroTextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6.SuspendLayout();
+            this.summa1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.kimden1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.kimge1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.name1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.editbtn_elips = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataa1
             // 
             this.dataa1.DisplayFocus = true;
-            this.dataa1.Location = new System.Drawing.Point(55, 149);
+            this.dataa1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataa1.Location = new System.Drawing.Point(33, 189);
             this.dataa1.MinimumSize = new System.Drawing.Size(0, 29);
             this.dataa1.Name = "dataa1";
-            this.dataa1.Size = new System.Drawing.Size(166, 29);
-            this.dataa1.TabIndex = 3;
-            // 
-            // name
-            // 
-            this.name.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.name.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
-            this.name.BackColor = System.Drawing.Color.Gray;
-            // 
-            // 
-            // 
-            this.name.CustomButton.Image = null;
-            this.name.CustomButton.Location = new System.Drawing.Point(144, 1);
-            this.name.CustomButton.Name = "";
-            this.name.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.name.CustomButton.TabIndex = 1;
-            this.name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.name.CustomButton.UseSelectable = true;
-            this.name.CustomButton.Visible = false;
-            this.name.DisplayIcon = true;
-            this.name.ForeColor = System.Drawing.Color.Black;
-            this.name.Lines = new string[0];
-            this.name.Location = new System.Drawing.Point(55, 43);
-            this.name.MaxLength = 32767;
-            this.name.Name = "name";
-            this.name.PasswordChar = '\0';
-            this.name.PromptText = "Name";
-            this.name.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.name.SelectedText = "";
-            this.name.SelectionLength = 0;
-            this.name.SelectionStart = 0;
-            this.name.ShortcutsEnabled = true;
-            this.name.Size = new System.Drawing.Size(166, 23);
-            this.name.TabIndex = 4;
-            this.name.Tag = "Суммасы";
-            this.name.UseSelectable = true;
-            this.name.WaterMark = "Name";
-            this.name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.name.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.dataa1.Size = new System.Drawing.Size(185, 29);
+            this.dataa1.TabIndex = 4;
+            this.dataa1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // editbtn
             // 
+            this.editbtn.BackColor = System.Drawing.Color.Lime;
+            this.editbtn.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.editbtn.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.editbtn.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.editbtn.Location = new System.Drawing.Point(94, 236);
+            this.editbtn.Location = new System.Drawing.Point(85, 277);
             this.editbtn.Name = "editbtn";
-            this.editbtn.Size = new System.Drawing.Size(90, 25);
-            this.editbtn.TabIndex = 5;
+            this.editbtn.Size = new System.Drawing.Size(90, 28);
+            this.editbtn.TabIndex = 6;
             this.editbtn.Text = "Өзгөртүү";
             this.editbtn.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.editbtn.UseSelectable = true;
@@ -104,183 +83,239 @@
             // id
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.id.Location = new System.Drawing.Point(90, 5);
+            this.id.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.id.Location = new System.Drawing.Point(109, 15);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(102, 35);
+            this.id.Size = new System.Drawing.Size(75, 24);
             this.id.TabIndex = 9;
-            this.id.Text = "111111111";
+            this.id.Text = "111";
             this.id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // summa
-            // 
-            // 
-            // 
-            // 
-            this.summa.CustomButton.Image = null;
-            this.summa.CustomButton.Location = new System.Drawing.Point(144, 1);
-            this.summa.CustomButton.Name = "";
-            this.summa.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.summa.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.summa.CustomButton.TabIndex = 1;
-            this.summa.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.summa.CustomButton.UseSelectable = true;
-            this.summa.CustomButton.Visible = false;
-            this.summa.DisplayIcon = true;
-            this.summa.Lines = new string[0];
-            this.summa.Location = new System.Drawing.Point(55, 193);
-            this.summa.MaxLength = 32767;
-            this.summa.Name = "summa";
-            this.summa.PasswordChar = '\0';
-            this.summa.PromptText = "Summa";
-            this.summa.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.summa.SelectedText = "";
-            this.summa.SelectionLength = 0;
-            this.summa.SelectionStart = 0;
-            this.summa.ShortcutsEnabled = true;
-            this.summa.Size = new System.Drawing.Size(166, 23);
-            this.summa.TabIndex = 8;
-            this.summa.Tag = "Суммасы";
-            this.summa.UseSelectable = true;
-            this.summa.WaterMark = "Summa";
-            this.summa.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.summa.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // kimden
-            // 
-            // 
-            // 
-            // 
-            this.kimden.CustomButton.Image = null;
-            this.kimden.CustomButton.Location = new System.Drawing.Point(144, 1);
-            this.kimden.CustomButton.Name = "";
-            this.kimden.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.kimden.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.kimden.CustomButton.TabIndex = 1;
-            this.kimden.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.kimden.CustomButton.UseSelectable = true;
-            this.kimden.CustomButton.Visible = false;
-            this.kimden.DisplayIcon = true;
-            this.kimden.Lines = new string[0];
-            this.kimden.Location = new System.Drawing.Point(55, 114);
-            this.kimden.MaxLength = 32767;
-            this.kimden.Name = "kimden";
-            this.kimden.PasswordChar = '\0';
-            this.kimden.PromptText = "Kimden";
-            this.kimden.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.kimden.SelectedText = "";
-            this.kimden.SelectionLength = 0;
-            this.kimden.SelectionStart = 0;
-            this.kimden.ShortcutsEnabled = true;
-            this.kimden.Size = new System.Drawing.Size(166, 23);
-            this.kimden.TabIndex = 7;
-            this.kimden.Tag = "Суммасы";
-            this.kimden.UseSelectable = true;
-            this.kimden.WaterMark = "Kimden";
-            this.kimden.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.kimden.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // kimge
-            // 
-            // 
-            // 
-            // 
-            this.kimge.CustomButton.Image = null;
-            this.kimge.CustomButton.Location = new System.Drawing.Point(144, 1);
-            this.kimge.CustomButton.Name = "";
-            this.kimge.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.kimge.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.kimge.CustomButton.TabIndex = 1;
-            this.kimge.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.kimge.CustomButton.UseSelectable = true;
-            this.kimge.CustomButton.Visible = false;
-            this.kimge.DisplayIcon = true;
-            this.kimge.Lines = new string[0];
-            this.kimge.Location = new System.Drawing.Point(55, 79);
-            this.kimge.MaxLength = 32767;
-            this.kimge.Name = "kimge";
-            this.kimge.PasswordChar = '\0';
-            this.kimge.PromptText = "Kimge";
-            this.kimge.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.kimge.SelectedText = "";
-            this.kimge.SelectionLength = 0;
-            this.kimge.SelectionStart = 0;
-            this.kimge.ShortcutsEnabled = true;
-            this.kimge.Size = new System.Drawing.Size(166, 23);
-            this.kimge.TabIndex = 6;
-            this.kimge.Tag = "Суммасы";
-            this.kimge.UseSelectable = true;
-            this.kimge.WaterMark = "Kimge";
-            this.kimge.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.kimge.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(0, 25);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(268, 29);
-            this.panel6.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(63, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ө з г ө р т ү ү";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(38)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.summa1);
+            this.panel7.Controls.Add(this.kimden1);
+            this.panel7.Controls.Add(this.kimge1);
+            this.panel7.Controls.Add(this.name1);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Controls.Add(this.label5);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.editbtn);
             this.panel7.Controls.Add(this.id);
-            this.panel7.Controls.Add(this.name);
-            this.panel7.Controls.Add(this.summa);
-            this.panel7.Controls.Add(this.kimge);
-            this.panel7.Controls.Add(this.kimden);
             this.panel7.Controls.Add(this.dataa1);
-            this.panel7.Location = new System.Drawing.Point(0, 60);
+            this.panel7.Location = new System.Drawing.Point(-1, 81);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(268, 285);
+            this.panel7.Size = new System.Drawing.Size(256, 328);
             this.panel7.TabIndex = 8;
+            // 
+            // summa1
+            // 
+            this.summa1.Depth = 0;
+            this.summa1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.summa1.Hint = "";
+            this.summa1.Location = new System.Drawing.Point(33, 241);
+            this.summa1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.summa1.Name = "summa1";
+            this.summa1.PasswordChar = '\0';
+            this.summa1.SelectedText = "";
+            this.summa1.SelectionLength = 0;
+            this.summa1.SelectionStart = 0;
+            this.summa1.Size = new System.Drawing.Size(185, 23);
+            this.summa1.TabIndex = 20;
+            this.summa1.UseSystemPasswordChar = false;
+            // 
+            // kimden1
+            // 
+            this.kimden1.Depth = 0;
+            this.kimden1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.kimden1.Hint = "";
+            this.kimden1.Location = new System.Drawing.Point(33, 147);
+            this.kimden1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.kimden1.Name = "kimden1";
+            this.kimden1.PasswordChar = '\0';
+            this.kimden1.SelectedText = "";
+            this.kimden1.SelectionLength = 0;
+            this.kimden1.SelectionStart = 0;
+            this.kimden1.Size = new System.Drawing.Size(185, 23);
+            this.kimden1.TabIndex = 19;
+            this.kimden1.UseSystemPasswordChar = false;
+            // 
+            // kimge1
+            // 
+            this.kimge1.Depth = 0;
+            this.kimge1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.kimge1.Hint = "";
+            this.kimge1.Location = new System.Drawing.Point(33, 103);
+            this.kimge1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.kimge1.Name = "kimge1";
+            this.kimge1.PasswordChar = '\0';
+            this.kimge1.SelectedText = "";
+            this.kimge1.SelectionLength = 0;
+            this.kimge1.SelectionStart = 0;
+            this.kimge1.Size = new System.Drawing.Size(185, 23);
+            this.kimge1.TabIndex = 18;
+            this.kimge1.UseSystemPasswordChar = false;
+            // 
+            // name1
+            // 
+            this.name1.Depth = 0;
+            this.name1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name1.Hint = "";
+            this.name1.Location = new System.Drawing.Point(36, 58);
+            this.name1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.name1.Name = "name1";
+            this.name1.PasswordChar = '\0';
+            this.name1.SelectedText = "";
+            this.name1.SelectionLength = 0;
+            this.name1.SelectionStart = 0;
+            this.name1.Size = new System.Drawing.Size(185, 23);
+            this.name1.TabIndex = 17;
+            this.name1.UseSystemPasswordChar = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label7.Location = new System.Drawing.Point(82, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "ID :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label6.Location = new System.Drawing.Point(30, 225);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Сумма";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label5.Location = new System.Drawing.Point(34, 43);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Аты";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label4.Location = new System.Drawing.Point(30, 173);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Дата";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Location = new System.Drawing.Point(33, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Кимден";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.Location = new System.Drawing.Point(33, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Кимге";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this.panel7;
+            // 
+            // editbtn_elips
+            // 
+            this.editbtn_elips.ElipseRadius = 4;
+            this.editbtn_elips.TargetControl = this.editbtn;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel2.Location = new System.Drawing.Point(-1, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(256, 56);
+            this.panel2.TabIndex = 21;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(49, -4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(173, 68);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // EditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(268, 344);
+            this.ClientSize = new System.Drawing.Size(253, 408);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(268, 344);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(268, 344);
             this.Name = "EditForm";
+            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.EditForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.EditForm_Paint);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroDateTime dataa1;
-        private MetroFramework.Controls.MetroTextBox name;
         private MetroFramework.Controls.MetroButton editbtn;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private MetroFramework.Controls.MetroTextBox summa;
-        private MetroFramework.Controls.MetroTextBox kimden;
-        private MetroFramework.Controls.MetroTextBox kimge;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label id;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        public MetroFramework.Controls.MetroDateTime dataa1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField name1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField summa1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField kimden1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField kimge1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuElipse editbtn_elips;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
