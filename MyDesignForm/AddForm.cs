@@ -59,8 +59,13 @@ namespace MyDesignForm
             path.AddEllipse(new Rectangle(0, 0, 300, 300));
             Region = new Region(path);
         }
+        
+        private void AddForm_Load_1(object sender, EventArgs e)
+        {
 
-        private void editbtn_Click(object sender, EventArgs e)
+        }
+
+        private void add_btn_Click(object sender, EventArgs e)
         {
             string program_dir = Application.StartupPath;
             string DbConst = $"Data source={program_dir}\\testdb.db;Version=3;";
@@ -69,14 +74,15 @@ namespace MyDesignForm
             {
                 using (var query = new SQLiteCommand(baglan))
                 {
-                    if(this.status86 == 6060)
-                        query.CommandText = "INSERT into incomeUsers(user, toUser, onUser, date, summa, incomeid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qSumma, :qID )";
+                    if (this.status86 == 6060)
+                        query.CommandText = "INSERT into incomeUsers(user, toUser, onUser, date, categories, summa, incomeid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qCategories, :qSumma, :qID )";
                     else
-                        query.CommandText = "INSERT into expenseUsers(user, toUser, onUser, date, summa, expenseid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qSumma, :qID )";
+                        query.CommandText = "INSERT into expenseUsers(user, toUser, onUser, date, categories, summa, expenseid) VALUES (:qName, :qKimge, :qKimden, :qDate, :qCategories, :qSumma, :qID )";
                     query.Parameters.Add("qName", DbType.String).Value = name.Text;
                     query.Parameters.Add("qKimge", DbType.String).Value = kimge.Text;
                     query.Parameters.Add("qKimden", DbType.String).Value = kimden.Text;
                     query.Parameters.Add("qDate", DbType.String).Value = dataa1.Text;
+                    query.Parameters.Add("qCategories", DbType.String).Value = categories.Text;
                     query.Parameters.Add("qSumma", DbType.Int32).Value = summa.Text;
                     query.Parameters.Add("qID", DbType.Int32).Value = this.incomeid;
 
@@ -93,14 +99,9 @@ namespace MyDesignForm
                         MessageBox.Show("Маалымат толтурууда ката бар!");
                         this.Close();
                     }
-                    
+
                 }
             }
-        }
-
-        private void AddForm_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

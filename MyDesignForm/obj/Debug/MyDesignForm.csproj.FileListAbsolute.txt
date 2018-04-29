@@ -160,3 +160,4 @@ C:\Users\NIMDA\Documents\Visual Studio 2015\Projects\masterCalculater\MyDesignFo
 C:\Users\NIMDA\Documents\Visual Studio 2015\Projects\masterCalculater\MyDesignForm\obj\Debug\MyDesignForm.test.ky.resources
 C:\Users\NIMDA\Documents\Visual Studio 2015\Projects\masterCalculater\MyDesignForm\obj\Debug\MyDesignForm.csproj.GenerateResource.Cache
 C:\Users\NIMDA\Documents\Visual Studio 2015\Projects\masterCalculater\MyDesignForm\obj\Debug\ky\MyDesignForm.resources.dll
+C:\Users\NIMDA\Documents\Visual Studio 2015\Projects\masterCalculater\MyDesignForm\obj\Debug\MyDesignForm.Calculator.resources

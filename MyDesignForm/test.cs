@@ -318,6 +318,7 @@ namespace MyDesignForm
             v.btnName = hbtn1.Text;
             v.btnNomer = 1;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn2_Click(object sender, EventArgs e)
@@ -327,6 +328,8 @@ namespace MyDesignForm
             v.btnName = hbtn2.Text;
             v.btnNomer = 2;
             v.ShowDialog();
+            this.test_Load(sender, e);
+
         }
 
         private void hbtn3_Click(object sender, EventArgs e)
@@ -336,6 +339,7 @@ namespace MyDesignForm
             v.btnNomer = 3;
             v.btnName = hbtn3.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn4_Click(object sender, EventArgs e)
@@ -345,6 +349,7 @@ namespace MyDesignForm
             v.btnNomer = 4;
             v.btnName = hbtn4.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn5_Click(object sender, EventArgs e)
@@ -354,6 +359,7 @@ namespace MyDesignForm
             v.btnNomer = 5;
             v.btnName = hbtn5.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn6_Click(object sender, EventArgs e)
@@ -363,6 +369,7 @@ namespace MyDesignForm
             v.btnNomer = 6;
             v.btnName = hbtn6.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn7_Click(object sender, EventArgs e)
@@ -372,6 +379,7 @@ namespace MyDesignForm
             v.btnNomer = 7;
             v.btnName = hbtn7.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn8_Click(object sender, EventArgs e)
@@ -381,6 +389,7 @@ namespace MyDesignForm
             v.btnNomer = 8;
             v.btnName = hbtn8.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn9_Click(object sender, EventArgs e)
@@ -390,6 +399,7 @@ namespace MyDesignForm
             v.btnNomer = 9;
             v.btnName = hbtn9.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn10_Click(object sender, EventArgs e)
@@ -399,6 +409,7 @@ namespace MyDesignForm
             v.btnNomer = 10;
             v.btnName = hbtn10.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn11_Click(object sender, EventArgs e)
@@ -408,6 +419,7 @@ namespace MyDesignForm
             v.btnNomer = 11;
             v.btnName = hbtn11.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn12_Click(object sender, EventArgs e)
@@ -417,6 +429,7 @@ namespace MyDesignForm
             v.btnNomer = 12;
             v.btnName = hbtn12.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void hbtn13_Click(object sender, EventArgs e)
@@ -426,6 +439,7 @@ namespace MyDesignForm
             v.btnNomer = 13;
             v.btnName = hbtn13.Text;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn1_Click(object sender, EventArgs e)
@@ -435,6 +449,7 @@ namespace MyDesignForm
             v.btnName = bbtn1.Text;
             v.btnNomer = 1;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -453,6 +468,7 @@ namespace MyDesignForm
             v.btnName = bbtn2.Text;
             v.btnNomer = 2;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn3_Click(object sender, EventArgs e)
@@ -462,6 +478,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 3;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn4_Click(object sender, EventArgs e)
@@ -471,6 +488,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 4;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn5_Click(object sender, EventArgs e)
@@ -480,6 +498,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 5;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn6_Click(object sender, EventArgs e)
@@ -489,6 +508,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 6;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn7_Click(object sender, EventArgs e)
@@ -498,6 +518,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 7;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn8_Click(object sender, EventArgs e)
@@ -507,6 +528,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 8;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn9_Click(object sender, EventArgs e)
@@ -516,6 +538,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 9;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn10_Click(object sender, EventArgs e)
@@ -525,6 +548,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 10;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn11_Click(object sender, EventArgs e)
@@ -534,6 +558,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 11;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn12_Click(object sender, EventArgs e)
@@ -543,6 +568,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 12;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn13_Click(object sender, EventArgs e)
@@ -552,6 +578,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 13;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn14_Click(object sender, EventArgs e)
@@ -561,6 +588,7 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 14;
             v.ShowDialog();
+            this.test_Load(sender, e);
         }
 
         private void bbtn15_Click(object sender, EventArgs e)
@@ -570,6 +598,8 @@ namespace MyDesignForm
             v.btnName = bbtn3.Text;
             v.btnNomer = 15;
             v.ShowDialog();
+            this.Refresh();
+            this.test_Load(sender, e);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -642,5 +672,12 @@ namespace MyDesignForm
             else
                 WindowState = FormWindowState.Normal;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //this.Refresh();
+            
+        }
+
     }
 }

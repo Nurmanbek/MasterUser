@@ -26,6 +26,7 @@ namespace MyDesignForm
         public string onuser1;
 
         public string editdate;
+        public string editcategories;
         public string editsumma1;
         public int incomeid;
 
@@ -50,13 +51,11 @@ namespace MyDesignForm
             kimden1.Text = this.onuser1;
 
             dataa1.Text = this.editdate;
+
+            categories.Text = this.editcategories;
+
             summa1.Text = this.editsumma1;
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
+            
         }
 
         private void EditForm_Paint(object sender, PaintEventArgs e)
@@ -73,6 +72,16 @@ namespace MyDesignForm
 
         private void editbtn_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void edit_btn_Click(object sender, EventArgs e)
+        {
             string dateValue = dataa1.Text;
             string program_dir = Application.StartupPath;
             string DbConst = $"Data source={program_dir}\\testdb.db;Version=3;";
@@ -81,16 +90,18 @@ namespace MyDesignForm
             {
                 using (var query = new SQLiteCommand(baglan))
                 {
-                    if(this.status86 == 6060)
-                        query.CommandText = "UPDATE incomeUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, summa = :qSumma where id = :qID";
+                    if (this.status86 == 6060)
+                        query.CommandText = "UPDATE incomeUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, categories = :qCategories, summa = :qSumma where id = :qID";
                     else
-                        query.CommandText = "UPDATE expenseUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, summa = :qSumma where id = :qID";
+                        query.CommandText = "UPDATE expenseUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, categories = :qCategories, summa = :qSumma where id = :qID";
                     query.Parameters.Add("qName", DbType.String).Value = name1.Text;
                     query.Parameters.Add("qKimge", DbType.String).Value = kimge1.Text;
                     query.Parameters.Add("qKimden", DbType.String).Value = kimden1.Text;
                     query.Parameters.Add("qDate", DbType.String).Value = dateValue;
                     query.Parameters.Add("qSumma", DbType.Int32).Value = summa1.Text;
+                    query.Parameters.Add("qCategories", DbType.String).Value = categories.Text;
                     query.Parameters.Add("qID", DbType.Int32).Value = id.Text;
+
 
                     try
                     {
@@ -106,11 +117,6 @@ namespace MyDesignForm
                     this.Close();
                 }
             }
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

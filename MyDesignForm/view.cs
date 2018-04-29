@@ -19,6 +19,7 @@ namespace MyDesignForm
 {
     public partial class view : MetroForm
     {
+        
         public int status86 = 0;
         public int btnNomer = 0;
         private int rowNom = 0;
@@ -37,6 +38,22 @@ namespace MyDesignForm
 
         private void view_Load(object sender, EventArgs e)
         {
+            bunifuGrid1.EditMode = DataGridViewEditMode.EditOnEnter;
+            bunifuGrid1.Location = new Point(2, 4);
+            bunifuGrid1.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            bunifuGrid1.GridColor = SystemColors.ActiveBorder;
+            
+          
+            //id.Text = this.editid;
+            //name1.Text = this.editname1;
+
+            //kimge1.Text = this.touser1;
+
+            //kimden1.Text = this.onuser1;
+
+            //dataa1.Text = this.editdate;
+            //summa1.Text = this.editsumma1;
+
             // TODO: данная строка кода позволяет загрузить данные в таблицу "appData.PhoneBooks". При необходимости она может быть перемещена или удалена.
             //this.phoneBooksTableAdapter.Fill(this.appData.PhoneBooks);
             switch (Properties.Settings.Default.logintemp)
@@ -71,6 +88,7 @@ namespace MyDesignForm
             table.Columns.Add("Кимге", typeof(string));
             table.Columns.Add("Кимден", typeof(string));
             table.Columns.Add("Дата", typeof(string));
+            table.Columns.Add("Категория", typeof(string));
             table.Columns.Add("Сумма", typeof(double));
             
             string program_dir = Application.StartupPath;
@@ -89,7 +107,7 @@ namespace MyDesignForm
                     {
                         int i = 0;
                         int searchSummaValue = 0;
-                        string[] btnDtext = new string[6];
+                        string[] btnDtext = new string[7];
                         query.Connection.Open();
                         SQLiteDataReader dtr = query.ExecuteReader();
                         while (dtr.Read())
@@ -100,9 +118,10 @@ namespace MyDesignForm
                             btnDtext[2] = dtr["toUser"].ToString();
                             btnDtext[3] = dtr["onUser"].ToString();
                             btnDtext[4] = dtr["date"].ToString();
-                            btnDtext[5] = dtr["summa"].ToString();
+                            btnDtext[5] = dtr["categories"].ToString();
+                            btnDtext[6] = dtr["summa"].ToString();
                             searchSummaValue += int.Parse(dtr["summa"].ToString());
-                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5]);
+                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5], btnDtext[6]);
                         }
                         bunifuGrid1.DataSource = table;
                         sumlbl.Text = searchSummaValue.ToString();
@@ -167,7 +186,8 @@ namespace MyDesignForm
                 ef.touser1 = this.bunifuGrid1.Rows[indexRow].Cells[3].Value.ToString();
                 ef.onuser1 = this.bunifuGrid1.Rows[indexRow].Cells[4].Value.ToString();
                 ef.editdate = this.bunifuGrid1.Rows[indexRow].Cells[5].Value.ToString();
-                ef.editsumma1 = this.bunifuGrid1.Rows[indexRow].Cells[6].Value.ToString();
+                ef.editcategories = this.bunifuGrid1.Rows[indexRow].Cells[6].Value.ToString();
+                ef.editsumma1 = this.bunifuGrid1.Rows[indexRow].Cells[7].Value.ToString();
                 ef.incomeid = this.btnNomer;
                 ef.ShowDialog();
                 this.Obnovit();
@@ -189,6 +209,7 @@ namespace MyDesignForm
             table.Columns.Add("Кимге", typeof(string));
             table.Columns.Add("Кимден", typeof(string));
             table.Columns.Add("Дата", typeof(string));
+            table.Columns.Add("Категория", typeof(string));
             table.Columns.Add("Сумма", typeof(double));
 
             string program_dir = Application.StartupPath;
@@ -207,7 +228,7 @@ namespace MyDesignForm
                     {
                         int i = 0;
                         int searchSummaValue = 0;
-                        string[] btnDtext = new string[6];
+                        string[] btnDtext = new string[7];
                         query.Connection.Open();
                         SQLiteDataReader dtr = query.ExecuteReader();
                         while (dtr.Read())
@@ -218,9 +239,10 @@ namespace MyDesignForm
                             btnDtext[2] = dtr["toUser"].ToString();
                             btnDtext[3] = dtr["onUser"].ToString();
                             btnDtext[4] = dtr["date"].ToString();
-                            btnDtext[5] = dtr["summa"].ToString();
+                            btnDtext[5] = dtr["categories"].ToString();
+                            btnDtext[6] = dtr["summa"].ToString();
                             searchSummaValue += int.Parse(dtr["summa"].ToString());
-                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5]);
+                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5], btnDtext[6]);
                         }
                         bunifuGrid1.DataSource = table;
                         sumlbl.Text = searchSummaValue.ToString();
@@ -309,6 +331,7 @@ namespace MyDesignForm
             table.Columns.Add("Кимге", typeof(string));
             table.Columns.Add("Кимден", typeof(string));
             table.Columns.Add("Дата", typeof(string));
+            table.Columns.Add("Категория", typeof(string));
             table.Columns.Add("Сумма", typeof(double));
 
             using (var baglan = new SQLiteConnection(DbConst))
@@ -354,6 +377,17 @@ namespace MyDesignForm
                                 query.Parameters.Add("searchText", DbType.String).Value = valueToFind;
                                 break;
                             }
+                        case 3:
+                            {
+                                valueToFind = bunifuTextbox1.text;
+                                if (this.status86 == 6060)
+                                    query.CommandText = "SELECT * FROM incomeUsers WHERE incomeUsers.incomeid = :qID AND incomeUsers.categories LIKE '%" + valueToFind + "%'";
+                                else
+                                    query.CommandText = "SELECT * FROM expenseUsers WHERE expenseUsers.expenseid = :qID AND expenseUsers.categories LIKE '%" + valueToFind + "%'";
+                                query.Parameters.Add("qID", DbType.Int32).Value = this.btnNomer;
+                                query.Parameters.Add("searchText", DbType.String).Value = valueToFind;
+                                break;
+                            }
                         default:
                             {
                                 valueToFind = bunifuTextbox1.text;
@@ -368,7 +402,7 @@ namespace MyDesignForm
                     }
                     int i = 0;
                     double searchSummaValue = 0;
-                    string[] btnDtext = new string[6];
+                    string[] btnDtext = new string[7];
                     query.Connection.Open();
                     SQLiteDataReader dtr = query.ExecuteReader();
                     while (dtr.Read())
@@ -379,9 +413,10 @@ namespace MyDesignForm
                         btnDtext[2] = dtr["toUser"].ToString();
                         btnDtext[3] = dtr["onUser"].ToString();
                         btnDtext[4] = dtr["date"].ToString();
-                        btnDtext[5] = dtr["summa"].ToString();
+                        btnDtext[5] = dtr["categories"].ToString();
+                        btnDtext[6] = dtr["summa"].ToString();
                         searchSummaValue += int.Parse(dtr["summa"].ToString());
-                        table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5]);
+                        table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5], btnDtext[6]);
                     }
                     bunifuGrid1.DataSource = table;
                     this.maxRowID = i - 1;
@@ -413,6 +448,104 @@ namespace MyDesignForm
 
         private void btnok_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            this.Obnovit();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Obnovit();
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            DGVPrinter pr = new DGVPrinter();
+            pr.Title = "Кардарлар тууралуу билдирүү"; //Header
+            pr.SubTitle = string.Format("Дата: {0}", DateTime.Now.Date.ToString("MM/dd/yyyy"));
+            pr.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            pr.PageNumbers = true;
+            pr.PageNumberInHeader = false;
+            pr.PorportionalColumns = true;
+            pr.HeaderCellAlignment = StringAlignment.Near;
+            pr.Footer = "Үйрөнүү";
+            pr.FooterSpacing = 15;
+            pr.PrintDataGridView(bunifuGrid1);
+        }
+        
+
+        private void bunifuGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.status86 == 6060)
+                this.status86 = 6060;
+            else
+                this.status86 = 8080;
+            int indexRow = e.RowIndex; // get the selected Row Index
+            if (indexRow >= 0)
+            {
+                id.Text = this.bunifuGrid1.Rows[indexRow].Cells[1].Value.ToString();
+                name1.Text = this.bunifuGrid1.Rows[indexRow].Cells[2].Value.ToString();
+                kimge1.Text = this.bunifuGrid1.Rows[indexRow].Cells[3].Value.ToString();
+                kimden1.Text = this.bunifuGrid1.Rows[indexRow].Cells[4].Value.ToString();
+                dataa1.Text = this.bunifuGrid1.Rows[indexRow].Cells[5].Value.ToString();
+                categories.Text = this.bunifuGrid1.Rows[indexRow].Cells[6].Value.ToString();
+                summa1.Text = this.bunifuGrid1.Rows[indexRow].Cells[7].Value.ToString();
+
+                this.Obnovit();
+                //bunifuGrid1.SelectedRows.Clear();
+                bunifuGrid1.Rows[0].Selected = false;
+                bunifuGrid1.Rows[indexRow].Selected = true;
+                //MessageBox.Show(ef.editsumma);
+            }
+        }
+
+        private void edit_btn_Click(object sender, EventArgs e)
+        {
+            int qID = bunifuGrid1.CurrentCell.RowIndex;
+            int deleteID = Int32.Parse(bunifuGrid1.Rows[qID].Cells[1].Value.ToString());
+            string dateValue = dataa1.Text;
+            string program_dir = Application.StartupPath;
+            string DbConst = $"Data source={program_dir}\\testdb.db;Version=3;";
+
+            using (var baglan = new SQLiteConnection(DbConst))
+            {
+                using (var query = new SQLiteCommand(baglan))
+                {
+                    if (this.status86 == 6060)
+                        query.CommandText = "UPDATE incomeUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, categories = qCategories, summa = :qSumma where id = :qID";
+                    else
+                        query.CommandText = "UPDATE expenseUsers SET user = :qName ,  toUser = :qKimge, onUser = :qKimden, date = :qDate, categories = qCategories, summa = :qSumma where id = :qID";
+                    query.Parameters.Add("qName", DbType.String).Value = name1.Text;
+                    query.Parameters.Add("qKimge", DbType.String).Value = kimge1.Text;
+                    query.Parameters.Add("qKimden", DbType.String).Value = kimden1.Text;
+                    query.Parameters.Add("qDate", DbType.String).Value = dateValue;
+                    query.Parameters.Add("qCategories", DbType.String).Value = categories.Text;
+                    query.Parameters.Add("qSumma", DbType.Int32).Value = summa1.Text;
+                    query.Parameters.Add("qID", DbType.Int32).Value = id.Text;
+                                        
+                }
+            }
+        }
+
+        private void ok_btn_Click(object sender, EventArgs e)
+        {
             DataTable table = new DataTable();
             // add columns to datatable
             table.Columns.Add("#", typeof(int));
@@ -421,6 +554,7 @@ namespace MyDesignForm
             table.Columns.Add("Кимге", typeof(string));
             table.Columns.Add("Кимден", typeof(string));
             table.Columns.Add("Дата", typeof(string));
+            table.Columns.Add("Категория", typeof(string));
             table.Columns.Add("Сумма", typeof(double));
 
             string program_dir = Application.StartupPath;
@@ -441,7 +575,7 @@ namespace MyDesignForm
                     {
                         int i = 0;
                         int searchSummaValue = 0;
-                        string[] btnDtext = new string[6];
+                        string[] btnDtext = new string[7];
                         query.Connection.Open();
                         SQLiteDataReader dtr = query.ExecuteReader();
                         while (dtr.Read())
@@ -452,9 +586,10 @@ namespace MyDesignForm
                             btnDtext[2] = dtr["toUser"].ToString();
                             btnDtext[3] = dtr["onUser"].ToString();
                             btnDtext[4] = dtr["date"].ToString();
-                            btnDtext[5] = dtr["summa"].ToString();
+                            btnDtext[5] = dtr["categories"].ToString();
+                            btnDtext[6] = dtr["summa"].ToString();
                             searchSummaValue += int.Parse(dtr["summa"].ToString());
-                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5]);
+                            table.Rows.Add(i, btnDtext[0], btnDtext[1], btnDtext[2], btnDtext[3], btnDtext[4], btnDtext[5], btnDtext[6]);
                         }
                         bunifuGrid1.DataSource = table;
                         searchSumma.Text = searchSummaValue.ToString();
@@ -469,25 +604,13 @@ namespace MyDesignForm
                     }
                 }
             }
-        
-    }
 
-        private void refresh_Click(object sender, EventArgs e)
+        }
+        
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             this.Obnovit();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
-            else
-                WindowState = FormWindowState.Normal;
-        }
-
-        private void exit_btn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }   
 }

@@ -38,10 +38,13 @@ namespace MyDesignForm
         private void Form1_Load(object sender, EventArgs e)
         {
             MaterialSkinManager skinManager = MaterialSkinManager.Instance;
-            skinManager.Theme = MaterialSkinManager.Themes.DARK;
-            skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Yellow100, Primary.Blue700, Accent.Orange400, TextShade.WHITE);
+            skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Yellow100, Primary.Blue700, Accent.Orange400, TextShade.BLACK);
+            txtPassword.ForeColor = Color.White;
+            txtUsername.ForeColor = Color.White;
+            txtUsername.BackColor = Color.FromArgb(26, 65, 79);
+            txtPassword.BackColor = Color.FromArgb(26, 65, 79);
             
-
         }
 
         void load()
@@ -115,6 +118,11 @@ namespace MyDesignForm
             {
                 MessageBox.Show("Код туура эмес!");
             }
+        }
+      
+        private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = materialCheckBox1.Checked ? '\0' : '*';
         }
     }
 }
